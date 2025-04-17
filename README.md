@@ -91,7 +91,7 @@ export class YourService {
 
   async uploadFile() {
     // 获取插件实例
-    const instance = await this.pluginService.getInstance('upload-sr2');
+    const instance = await this.pluginService.getInstance('upload-r2');
 
     // 直接上传本地文件
     const url = await instance.uploadWithKey('/path/to/local/file.jpg', 'uploads/file.jpg');
@@ -104,7 +104,7 @@ export class YourService {
 
   async getUploadConfig(ctx) {
     // 获取插件实例
-    const instance = await this.pluginService.getInstance('upload-sr2');
+    const instance = await this.pluginService.getInstance('upload-r2');
 
     // 获取前端上传配置
     const config = await instance.upload(ctx);
