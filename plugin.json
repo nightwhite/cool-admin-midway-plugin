@@ -1,16 +1,18 @@
 {
-    "name": "测试",
-    "key": "test",
-    "hook": "",
-    "singleton": false,
-    "version": "1.0.0",
-    "description": "插件描述",
-    "author": "作者",
-    "logo": "assets/logo.png",
-    "readme": "README.md",
-    "config": {
-        "appId": "@baseDir/1.md",
-        "appSecret": "xxxxx",
-        "filePath": "@baseDir/xxxxx"
-    }
+  "name": "cool-admin-midawy-cloudflare-r2-plugin",
+  "key": "upload-r2",
+  "hook": "upload",
+  "singleton": false,
+  "version": "1.0.0",
+  "description": "兼容cloudflare-r2的上传插件",
+  "author": "NightWhite",
+  "logo": "assets/logo.png",
+  "readme": "README.md",
+  "config": {
+    "accessKeyId": "必须cloudflare R2的accessKeyId",
+    "secretAccessKey": "必须cloudflare R2的accessKeySecret",
+    "bucket": "必须cloudflare R2的bucket",
+    "region": "可选，cloudflare R2的区域，默认用auto",
+    "endpoint": "必须cloudflare R2的endpoint"
+  }
 }
